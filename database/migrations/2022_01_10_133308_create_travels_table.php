@@ -16,10 +16,10 @@ class CreateTravelsTable extends Migration
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
             $table->char("destination", 100);
-            $table->date("departure date", 100);
-            $table->date("arrival date", 100);
+            $table->date("departure_date");
+            $table->date("arrival_date");
             $table->decimal("price", 6, 2);
-            $table->char("description", 255);
+            $table->char("description", 255)->nullable();
             $table->timestamps();
         });
     }
