@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                       <h5 class="card-title text-center text-uppercase mb-4 text-danger">{{ $travel->destination }}</h5>
-                      <h6 class="my-3">Prezzo: €{{ $travel->price }}</h6>
+                      <h6 class="my-3">Prezzo: € {{ $travel->price }}</h6>
                       <h6>Data partenza: {{ $travel->departure_date }}</h6>
                       <h6>Data ritorno: {{ $travel->arrival_date }}</h6>
                       <p class="card-text mt-5">{{ mb_strimwidth($travel->description, 0, 100, "...") }}</p>
